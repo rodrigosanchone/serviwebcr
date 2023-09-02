@@ -1,0 +1,30 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+
+:root {
+    --secondary-color: #F2F2F2;
+    --blueMidnight:#000080;
+    --blueSecondary:#0058b7;
+    --white: #fff;
+  }
+
+  .bgGray{
+    background: var(--secondary-color);
+  }
+  .bgBlue{
+    background: var(--blueMidnight)!important;
+  }
+
+  .bgBlue-S{
+    background-color: var(--blueSecondary);
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif!important;
+    
+  }
+
+
+

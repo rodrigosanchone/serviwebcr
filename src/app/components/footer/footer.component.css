@@ -1,0 +1,50 @@
+
+
+.container-fluid{
+    align-items: center
+}
+
+.navbar-brand img{
+    height: 10rem; width: 60%;
+    margin: 0 10%;
+}
+
+.nav-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.nav-footer a {
+   margin: 1rem 5rem;
+   align-items: center!important;
+   white-space: nowrap;
+}
+
+
+
+.icoms{
+    margin-left: 10.5rem;
+}
+
+.icons svg{
+  margin: 0 2rem;
+}
+  
+
+@media(max-width:768px){
+    .navbar-brand img{
+        height: 20rem; width: 80%;
+        margin: 0 10%;
+    }
+
+    .nav-footer{
+        justify-content:flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: center!important;  
+        font-size: 1.5rem;
+    }
+   
+}
