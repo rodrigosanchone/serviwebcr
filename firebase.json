@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/serviwebcr/browser",
+    "public": "dist/serviwebcr",
     "ignore": [
       "firebase.json",
       "**/.*",

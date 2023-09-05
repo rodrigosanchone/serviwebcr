@@ -1,8 +1,19 @@
-.relative{
-    position: relative;
+
+
+
+.navbar-brand , .nav-link{
+  font-size: 2rem;
 }
 
-.navbar{
-  padding: 0;
+.navbar-brand img{
+  height: 18rem; width: 80%;
+ 
 }
 
+@media(max-width:768px){
+  .navbar-brand img{
+      height: 20rem; width: 100%;
+      margin: 0 10%;
+  }
+
+}

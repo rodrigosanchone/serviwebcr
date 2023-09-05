@@ -1,5 +1,5 @@
 .banner{
-   padding-top: 100px;
+   padding-top: 60px;
    color: aliceblue;
    text-align: center;
 }
@@ -29,6 +29,15 @@
 }
 
 @media(max-width:768px){
+  .banner-logo{
+   width: 100%;
+  }
+
+  .banner-logo img{
+   width: 100%;
+   margin: 0;
+}
+
    .banner-img{
       width: 100%;
       padding: 10px  10%;
@@ -36,8 +45,7 @@
 
      .banner-img img{
        align-items: center;
-     
-
+       height: 400px;
      }
 }
 

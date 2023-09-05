@@ -8,6 +8,12 @@
     --blueMidnight:#000080;
     --blueSecondary:#0058b7;
     --white: #fff;
+    --green:#4CAF50;
+    --darkgreen:#00761a;
+  }
+
+  .colorGreen{
+    color: var(--green)!important;
   }
 
   .bgGray{
@@ -21,10 +27,15 @@
     background-color: var(--blueSecondary);
   }
 
+  .bgGreen{
+    background-color: var(--darkgreen);
+  }
+
   body{
     font-family: 'Roboto', sans-serif!important;
     
   }
 
+  
 
 

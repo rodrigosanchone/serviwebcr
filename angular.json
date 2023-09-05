@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/serviwebcr/browser",
+            "outputPath": "dist/serviwebcr",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -26,6 +26,7 @@
             ],
             "styles": [
               "src/styles.css",
+              "node_modules/aos/dist/aos.css",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
@@ -37,13 +38,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "3md",
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "3mb",
+                  "maximumError": "3mb"
                 }
               ],
               "outputHashing": "all"
@@ -94,63 +95,9 @@
             ],
             "scripts": []
           }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/serviwebcr/server",
-            "main": "server.ts",
-            "tsConfig": "tsconfig.server.json"
-          },
-          "configurations": {
-            "production": {
-              "outputHashing": "media"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "sourceMap": true,
-              "extractLicenses": false,
-              "vendorChunk": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
-          "configurations": {
-            "development": {
-              "browserTarget": "serviwebcr:build:development",
-              "serverTarget": "serviwebcr:server:development"
-            },
-            "production": {
-              "browserTarget": "serviwebcr:build:production",
-              "serverTarget": "serviwebcr:server:production"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "prerender": {
-          "builder": "@nguniversal/builders:prerender",
-          "options": {
-            "routes": [
-              "/"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "serviwebcr:build:production",
-              "serverTarget": "serviwebcr:server:production"
-            },
-            "development": {
-              "browserTarget": "serviwebcr:build:development",
-              "serverTarget": "serviwebcr:server:development"
-            }
-          },
-          "defaultConfiguration": "production"
         }
-      }
     }
+  }
   },
   "cli": {
     "analytics": "20ad1ece-d1ea-486e-9af6-e26f30effb8d"

@@ -1,0 +1,18 @@
+
+#us{
+    color:aliceblue;
+}
+
+.img-us{
+   width: 50%;
+}
+
+.img-us img{
+    width: 100%;
+}
+
+@media(max-width:768px){
+    .img-us{
+        width: 100%;
+     }
+}

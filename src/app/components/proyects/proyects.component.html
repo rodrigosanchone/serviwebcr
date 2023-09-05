@@ -1,0 +1,12 @@
+<div id="proyects">
+  <div class="card-group">
+    <div class="card" style="width: 18rem" *ngFor="let proyecto of proyectos, let i=index">
+      <img [src]="proyecto.img" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h2 class="card-text text-center">
+           {{proyecto.nombre}}
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
