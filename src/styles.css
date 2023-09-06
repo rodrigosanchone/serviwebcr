@@ -31,10 +31,17 @@
     background-color: var(--darkgreen);
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body{
     font-family: 'Roboto', sans-serif!important;
-    
+    background-color: var(--secondary-color)!important;
   }
+
+
+
 
   
 

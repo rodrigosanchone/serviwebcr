@@ -1,0 +1,40 @@
+
+.social{
+    border-radius: 10rem 0 0 0;
+}
+
+
+.icon-social{
+   margin-top: 5rem!important;
+   margin-right: 290px;
+}
+
+
+
+.icon-tabler-brand-facebook{
+    margin-left: 40px;
+}
+
+.icon-tabler-brand-instagram{
+    margin-left: 30px;
+}
+
+.icon-tabler-brand-whatsapp{
+    margin-left: -20px;
+}
+
+form{
+    width: 60%;
+    margin: 0 20%;
+}
+
+
+@media(max-width:768px){
+    .social{
+        display: none;
+    }
+    form{
+        width: 100%;
+        margin-left: 10px;
+    }
+}

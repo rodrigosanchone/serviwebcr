@@ -4,10 +4,9 @@
     align-items: center
 }
 
-.navbar-brand img{
-    height: 10rem; width: 60%;
-    margin: 0 10%;
-}
+/* .navbar-brand img{
+   
+} */
 
 .nav-footer{
     display: flex;
@@ -18,14 +17,14 @@
 
 .nav-footer a {
    margin: 1rem 5rem;
-   align-items: center!important;
+ 
    white-space: nowrap;
 }
 
 
 
-.icoms{
-    margin-left: 10.5rem;
+.icons{
+   padding-left: 8rem;
 }
 
 .icons svg{

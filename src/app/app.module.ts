@@ -18,7 +18,9 @@ import { ProductsService } from './services/products.service';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { BannerBlogComponent } from './components/banner-blog/banner-blog.component';
+import { Banner2Component } from './components/banner2/banner2.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     FooterComponent,
     ProductsComponent,
     AboutUsComponent,
-    ProyectsComponent
+    ProyectsComponent,
+    BannerBlogComponent,
+    Banner2Component,
+   
   ],
   imports: [
     BrowserModule,
@@ -37,6 +42,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firestore),
     AngularFirestoreModule,
+    ReactiveFormsModule,
   ],
   providers: [provideClientHydration(),ProductsService],
   bootstrap: [AppComponent]
