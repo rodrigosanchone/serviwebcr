@@ -1,13 +1,14 @@
 
 #proyects{
-    padding: 100px;
+    margin-top: 2rem;
 }
 
 .card{
-    width: 280px;
-    margin: 0  2rem !important;
+ 
+  
 }
 
 .card-img-top{
     height: 400px;
 }
+

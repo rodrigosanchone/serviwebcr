@@ -2,8 +2,8 @@
 
 <div class="container" id="proyects">
     <h2 class="text-center">Nuestos Proyectos</h2>
-  <div class="row flex-wrap">
-    <div class="col-sm-6 col-md-4 col-lg-3"  *ngFor="let proyecto of proyectos, let i=index">
+  <div class="card-group flex-wrap">
+    <div class="col-sm-6 col-md-4 col-lg-3 m-5"  *ngFor="let proyecto of proyectos, let i=index">
       <div class="card">
         <img [src]="proyecto.img" [alt]="proyecto.nombre" class="card-img-top">
         <div class="card-body">

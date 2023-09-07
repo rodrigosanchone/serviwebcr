@@ -1,6 +1,7 @@
 
 #us{
     color:aliceblue;
+    width: 100%;
 }
 
 .img-us{
@@ -9,10 +10,17 @@
 
 .img-us img{
     width: 100%;
+    margin: 0;
+}
+
+.txt-us{
+    margin: 3rem 2rem; 
+
 }
 
 @media(max-width:768px){
     .img-us{
-        width: 100%;
+       width: 80%;
+       margin: 1rem auto;
      }
 }
