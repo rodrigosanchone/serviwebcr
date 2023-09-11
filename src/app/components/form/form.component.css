@@ -11,13 +11,15 @@
 
 .icon-social{
    margin-top: 5rem!important;
-   margin-right: 290px;
+   margin-right: 100px;
 }
 
 
 
 .icon-tabler-brand-facebook{
     margin-left: 60px;
+    width: 100%!important;
+  
 }
 
 .icon-tabler-brand-instagram{

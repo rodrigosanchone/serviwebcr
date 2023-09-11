@@ -21,6 +21,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { ReactiveFormsModule } from '@angular/forms';
 import { BannerBlogComponent } from './components/banner-blog/banner-blog.component';
 import { Banner2Component } from './components/banner2/banner2.component';
+import { ValuesComponent } from './components/values/values.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { Banner2Component } from './components/banner2/banner2.component';
     ProyectsComponent,
     BannerBlogComponent,
     Banner2Component,
+    ValuesComponent,
    
   ],
   imports: [
