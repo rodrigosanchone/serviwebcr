@@ -4,31 +4,39 @@
 
 
 :root {
-    --secondary-color: #F2F2F2;
-    --blueMidnight:#000080;
-    --blueSecondary:#0058b7;
-    --white: #fff;
-    --green:#4CAF50;
-    --darkgreen:#00761a;
+    --gray-ligth: #c2c5d2;
+    --gray-dark:#505c7c;
+    --NightMarket:#0092ff;
+    --blueGreen:#4b88ac;
+    --green:#5ee5d9;
   }
 
-  .colorGreen{
-    color: var(--green)!important;
+  .bgGreen{
+    background: var(--green)!important;
   }
 
   .bgGray{
-    background: var(--secondary-color);
-  }
-  .bgBlue{
-    background: var(--blueMidnight)!important;
+    background: var(--gray-ligth);
   }
 
-  .bgBlue-S{
-    background-color: var(--blueSecondary);
+  .bgDarkGray{
+    background: var(--gray-dark);
+  }
+
+  .bgBlue{
+    background: var(--NightMarket)!important;
+  }
+
+  .bgBlueGreen{
+    background-color: var(--blueGreen);
   }
 
   .bgGreen{
     background-color: var(--darkgreen);
+  }
+
+  .colorGreen{
+    color: var(--green);
   }
 
   html,body{
@@ -46,6 +54,14 @@
     font-family: 'Roboto', sans-serif!important;
     background-color: var(--secondary-color)!important;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    padding-bottom: 10px;
+    font-size: 2.5rem!important;
+    font-weight: 800;
+    text-align: center;
+}
 
 
 

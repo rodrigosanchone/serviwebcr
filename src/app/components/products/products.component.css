@@ -1,16 +1,73 @@
 
 #products{
-    padding-top: 100px
+    padding-top: 143px;
+   
 }
 
-.card-group{
-  margin-top: 2rem;
+ h2{
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card{
-  margin: 10px;
+  margin: 0 1rem;
+  width: 20rem;
 }
 
-.card-img-top{
-  height: 400px!important;
+.card img{
+  width: 125px;
+  height: 125px;
+  margin:  15px auto;
 }
+
+
+@media(max-width:1200px){ 
+
+  .card{
+    width: 30%;
+  }
+ 
+
+} 
+
+ 
+ 
+
+@media(max-width:992px){ 
+
+  .card{
+    margin: 2rem 1rem 0 2rem;
+    width: 100%;
+  }
+
+} 
+
+ 
+ 
+
+@media(max-width:768px){ 
+ 
+} 
+
+ 
+ 
+
+@media(max-width:575px){ 
+
+  
+
+  #products{
+    padding-top: 150px
+} 
+ 
+h2{
+  margin-bottom: 25px;
+}
+
+} 
+

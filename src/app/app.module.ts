@@ -23,6 +23,8 @@ import { BannerBlogComponent } from './components/banner-blog/banner-blog.compon
 import { Banner2Component } from './components/banner2/banner2.component';
 import { ValuesComponent } from './components/values/values.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +47,7 @@ import { ValuesComponent } from './components/values/values.component';
     AngularFireModule.initializeApp(environment.firestore),
     AngularFirestoreModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [provideClientHydration(),ProductsService],
   bootstrap: [AppComponent]
