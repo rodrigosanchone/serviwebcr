@@ -14,7 +14,7 @@ export class ProyectsService {
   proyecto!: Observable<Proyecto[]>;
   constructor(private db: AngularFirestore) {
     this.coleccion = db.collection('proyectos', (ref) =>
-      ref.orderBy('nombre', 'asc')
+      ref.orderBy('nombre', 'asc').limitToLast(3)
     );
   }
   getProyectos(): Observable<Proyecto[]> {

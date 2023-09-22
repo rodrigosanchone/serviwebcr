@@ -4,12 +4,14 @@
   background-size: cover;
   height: 800px;
   background-position: center;
- 
+  --bs-gutter-x: 0;
+  overflow-x: hidden;
 }
 
 .bgDarkGray {
   display: flex;
   align-items: center;
+
 }
 
 .bgDarkGray svg{
@@ -20,7 +22,7 @@
 .bgDarkGray ul {
   justify-content: center;
   margin-left: 8rem;
-  list-style: none;
+  list-style: none;  
 }
 
 .bgDarkGray h2,
@@ -29,16 +31,19 @@ ul {
 }
 
 .bgDarkGray ul li {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 400;
+  
 }
 
 .bgDarkGray-1 {
   border-radius: 0 0 10rem 0;
+  padding-left: 25rem;
 }
 
 .bgDarkGray-2 {
   border-radius: 0 0 0rem 10rem;
+ 
 }
 
 .side-1, .side-2{
@@ -46,11 +51,11 @@ ul {
 }
 
 .rigth {
-  animation: right 5000ms linear;
+  animation: right 1500ms linear forwards;
 }
 
 .left {
-  animation: left 5000ms linear;
+  animation: left 1500ms linear forwards;
 }
 
 .bgDarkGray-2 h2 {
@@ -71,6 +76,17 @@ ul {
 }
 
 @media (max-width: 1200px) {
+  .bgDarkGray-1 {
+    border-radius: 0 0 10rem 0;
+    padding-left: 20rem;
+  }
+  
+  .bgDarkGray-2 {
+    border-radius: 0 0 0 10rem;
+    padding-right: 20rem;
+
+  }
+
   .bgDarkGray ul li {
     font-size: 1rem;
     font-weight: 400; 
@@ -84,13 +100,27 @@ ul {
     width: 20px;
     height: 20px;
   }
+
+  .rigth {
+    animation: rightTablet 1500ms linear forwards;
+  }
+  
+  .left {
+    animation: leftTablet 1500ms linear forwards;
+  }
+  
+  .bgDarkGray ul {
+    
+    margin-left: 0rem;
+  }
+
 }
 
 @media (max-width: 992px) {
 
-  .side-1{
-    padding-left: 2.2rem;
-  }
+   .side-1{
+    padding-left: 2.2rem; 
+  } 
 
   .side-1 h2{
     font-size: 1.5rem!important;
@@ -150,20 +180,40 @@ ul {
 
 }
 
-@keyframes left {
+ @keyframes left {
   from {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-1200px);
+    transform: translateX(-500px);
   }
 }
 
-@keyframes right {
+ @keyframes right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}  
+
+
+@keyframes leftTablet {
   from {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(1200px);
+    transform: translateX(-220px);
   }
 }
+
+ @keyframes rightTablet {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(220px);
+  }
+} 
+  

@@ -1,15 +1,36 @@
 
 
 <div class="container" id="proyects">
-    <h2 class="text-center">Nuestos Proyectos</h2>
+    <div class="row proyects-title bgDarkGray">
+       <div class="col-md-10">
+        <p>SUCCESS STORIES</p>
+        <h2 class="text-center" data-aos="fade-left">Nuestros Proyectos</h2>
+       </div>
+       <div class="col-md-2">
+        <img src="https://dm.markhendriksen.com/wp-content/uploads/2020/03/diagonal-triangles-25.png" alt="">
+       </div>
+      
+    </div>
+  
   <div class="card-group flex-wrap">
-    <div class="col-sm-6 col-md-4 col-lg-3 m-5"  *ngFor="let proyecto of proyectos, let i=index">
-      <div class="card">
+    <div class="col-sm-12 col-lg-6"  *ngFor="let proyecto of proyectos, let i=index">
+      <div class="card ">
         <img [src]="proyecto.img" [alt]="proyecto.nombre" class="card-img-top">
-        <div class="card-body">
+        <div class="card-body  bgDarkGray">
           <h5 class="card-title">  {{proyecto.nombre}}</h5>
   
         </div>
       </div>
      
+     
     </div>
+    <div class="card bgGreen">
+      <div class="card-body">
+        <h5 class="card-title">Success Stories</h5>
+        <div class="div-btn-header d-grid gap-2">
+          <a type="button" class="btn   btn-lg text-white " href="#form">Ver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

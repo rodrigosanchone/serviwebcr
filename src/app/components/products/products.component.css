@@ -1,7 +1,7 @@
 
 #products{
     padding-top: 143px;
-   
+  
 }
 
  h2{
@@ -17,7 +17,12 @@
 .card{
   margin: 0 1rem;
   width: 20rem;
+  min-height: 500px;
 }
+
+/* .card-body{
+  min-height: 300px;
+} */
 
 .card img{
   width: 125px;
@@ -40,8 +45,13 @@
 
 @media(max-width:992px){ 
 
+  #products{
+    padding-top: 149px;
+  
+}
+
   .card{
-    margin: 2rem 1rem 0 2rem;
+    margin: 1rem 0rem 0rem 2rem;
     width: 100%;
   }
 

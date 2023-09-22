@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg bgDarkGray navbar-light fixed-top">
-  <div class="container-fluid bgGray ">
+<nav class="navbar navbar-expand-lg  navbar-light fixed-top">
+  <div class="container-fluid">
     <a class="navbar-brand colorGreen" href="#"> <h1>SERVIWEB</h1> </a>
     <button
       class="navbar-toggler"
@@ -19,7 +19,7 @@
           data-bs-toggle="collapse"
           data-bs-target=".navbar-collapse.show"
         >
-          <a class="nav-link" aria-current="page" href="#">Index</a>
+          <a class="nav-link" aria-current="page" [routerLink]="[ '/inicio']" >Index</a>
         </li>
         <li class="nav-item" (click)="cerrar()">
           <a class="nav-link" href="#products">Servicio</a>
@@ -34,8 +34,17 @@
     </div>
   </div>
  
-    <div class="div-btn-header">
-      <a type="button" class="btn bgBlue btn-lg text-white " href="#form"  (click)="cerrar()">Contactanos</a>
+    <div class="div-btn-header d-grid gap-2">
+      <a type="button" class="btn   btn-lg text-white " href="#form"  (click)="cerrar()">Contactanos</a>
     </div>
- 
+  
 </nav>
+
+
+ <app-banner></app-banner>
+ <app-products></app-products>
+<app-about-us/>
+ <app-banner2></app-banner2>
+ <app-proyects></app-proyects>
+ <app-banner3></app-banner3>
+

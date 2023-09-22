@@ -22,6 +22,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BannerBlogComponent } from './components/banner-blog/banner-blog.component';
 import { Banner2Component } from './components/banner2/banner2.component';
 import { ValuesComponent } from './components/values/values.component';
+import { FirtsComponent } from './components/firts/firts.component';
+import { Banner3Component } from './components/banner3/banner3.component';
+import { PrincipalComponent } from './components/principal/principal.component';
 
 
 
@@ -38,6 +41,9 @@ import { ValuesComponent } from './components/values/values.component';
     BannerBlogComponent,
     Banner2Component,
     ValuesComponent,
+    FirtsComponent,
+    Banner3Component,
+    PrincipalComponent,
    
   ],
   imports: [

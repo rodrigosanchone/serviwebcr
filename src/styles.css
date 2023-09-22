@@ -27,9 +27,7 @@
     background: var(--NightMarket)!important;
   }
 
-  .bgBlueGreen{
-    background-color: var(--blueGreen);
-  }
+
 
   .bgGreen{
     background-color: var(--darkgreen);
@@ -53,15 +51,11 @@
   body{
     font-family: 'Roboto', sans-serif!important;
     background-color: var(--secondary-color)!important;
+
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    color: #333;
-    padding-bottom: 10px;
-    font-size: 2.5rem!important;
-    font-weight: 800;
-    text-align: center;
-}
+
+
 
 
 
