@@ -28,6 +28,7 @@ import { PrincipalComponent } from './components/principal/principal.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +45,7 @@ import { PrincipalComponent } from './components/principal/principal.component';
     FirtsComponent,
     Banner3Component,
     PrincipalComponent,
+   
    
   ],
   imports: [
