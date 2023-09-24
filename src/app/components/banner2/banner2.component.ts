@@ -20,8 +20,8 @@ export class Banner2Component {
    @HostListener("window:scroll", [])
    onWindowScroll(){
    
-    let scrollPosition = window.scrollY;
-    console.log(scrollPosition)
+    /* let scrollPosition = window.scrollY;
+    console.log(scrollPosition) */
      
      let bgDarkGray1 = document.querySelector(".bgDarkGray-1") as HTMLButtonElement;
      let bgDarkGray2 = document.querySelector(".bgDarkGray-2") as HTMLButtonElement;

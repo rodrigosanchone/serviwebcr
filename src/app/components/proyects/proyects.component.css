@@ -40,6 +40,10 @@
     height: 400px;
 }
 
+.card h5{
+  color: var(--green);
+}
+
 .bgGreen .card-title{
     border-radius: 0 0 10rem 0;
     font-weight: 800!important;

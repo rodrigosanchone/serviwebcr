@@ -14,21 +14,26 @@ export class ProductsService {
   servicio!: Observable<Servicio[]>
   constructor(private db: AngularFirestore) { 
     this.coleccion= db.collection('servicios',ref=>ref.orderBy('nombre','asc'))
+    
   }
 
 
 getServicios():Observable<Servicio[]>{
+
+  
   this.servicio = this.coleccion.snapshotChanges().pipe(
     map(cambios=>{
       return cambios.map(accion=>{
         const datos = accion.payload.doc.data() as Servicio;
         datos.id = accion.payload.doc.id;
           return datos
-      })
+         
+      }) 
     })
   )
 
    return this.servicio
+   
 }
 
 }

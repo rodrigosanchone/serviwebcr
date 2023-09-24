@@ -1,16 +1,45 @@
-
-  <div class="card-group">
-    
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">titulo</h5>
-          <p class="card-text">xxxxx</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">titulo</h5>
-          <p class="card-text">xxxxx</p>
-        </div>
-      </div>
+<section class="container-fluid">
+  <div class="row blog-title bgDarkGray">
+    <div class="col-md-10">
+     <h2 class="text-center" data-aos="fade-left">Últimos Artículos</h2>
+    </div>
+    <div class="col-md-2">
+     <img src="https://dm.markhendriksen.com/wp-content/uploads/2020/03/diagonal-triangles-25.png" alt="">
+    </div>
+   
  </div>
+
+  <div class="pc">
+    <swiper-container
+      class="mySwiper"
+      centered-slides="true"
+      slides-per-view="4"
+      space-between="30"
+      grab-cursor="true"
+    >
+      <swiper-slide *ngFor="let articulo of articulos">
+        <div class="card">
+          <img [src]="articulo.img" alt="" />
+          <h5>{{ articulo.titulo }}</h5>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+
+  <div class="cel">
+    <swiper-container
+    class="mySwiper"
+    centered-slides="true"
+    slides-per-view="1"
+    space-between="10"
+    grab-cursor="true"
+  >
+    <swiper-slide *ngFor="let articulo of articulos">
+      <div class="card">
+        <img [src]="articulo.img" alt="" />
+        <h5>{{ articulo.titulo }}</h5>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  </div>
+</section>

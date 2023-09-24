@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,8 +25,9 @@ import { ValuesComponent } from './components/values/values.component';
 import { FirtsComponent } from './components/firts/firts.component';
 import { Banner3Component } from './components/banner3/banner3.component';
 import { PrincipalComponent } from './components/principal/principal.component';
+import { register } from 'swiper/element/bundle';
 
-
+register();
 
 
 @NgModule({
@@ -45,7 +46,7 @@ import { PrincipalComponent } from './components/principal/principal.component';
     FirtsComponent,
     Banner3Component,
     PrincipalComponent,
-   
+ 
    
   ],
   imports: [
@@ -55,9 +56,11 @@ import { PrincipalComponent } from './components/principal/principal.component';
     AngularFireModule.initializeApp(environment.firestore),
     AngularFirestoreModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+  
   ],
   providers: [provideClientHydration(),ProductsService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
