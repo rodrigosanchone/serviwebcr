@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 .navbar {
   background-color: #F2F2F2;
-  --bs-gutter-x: 0
+  --bs-gutter-x: 0;
+  overflow-x: hidden!important;
 }
 
 .navbar-brand {
   font-size: 1rem;
   margin-left: 2rem;
+
 }
 
 

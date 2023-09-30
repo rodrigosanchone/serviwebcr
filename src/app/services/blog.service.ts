@@ -15,7 +15,7 @@ export class BlogService {
   doc!: AngularFirestoreDocument<Articulo>;
   articulo!: Observable<Articulo[]>
   constructor(private db: AngularFirestore) { 
-    this.coleccion= db.collection('articulos',ref=>ref.orderBy('titulo','asc'))
+    this.coleccion= db.collection('articulos',ref=>ref.orderBy('fecha','asc'))
     
   }
 

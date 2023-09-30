@@ -4,7 +4,7 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { UntypedFormBuilder, UntypedFormGroup, UntypedFormControl, Validators,FormGroup,  FormControl, } from '@angular/forms';
 import Swal from 'sweetalert2'
 import { HttpClient } from '@angular/common/http';
-
+import { ReCaptchaV3Service } from 'ng-recaptcha';  
 
 @Component({
   selector: 'app-form',
@@ -29,7 +29,9 @@ export class FormComponent  implements OnInit{
   responseMessage2!: string; // the response message to show to the user
   responseMessage3!: string; // the response message to show to the user
   responseMessage4!: string; // the response message to show to the user
-  constructor(private formBuilder: UntypedFormBuilder) {
+  reCAPTCHAToken: string = "6LeWUGQoAAAAALtFE278DonOmx39YJ_pX-L_aCg_";
+  tokenVisible: boolean = false;
+  constructor(private formBuilder: UntypedFormBuilder, private recaptchaV3Service: ReCaptchaV3Service) {
   
     this.form = this.formBuilder.group({
       nombre: this.nombre,
@@ -42,7 +44,12 @@ export class FormComponent  implements OnInit{
     Aos.init();
   }
   onSubmit(e:Event){
-    console.log(this.nombre)
+
+    this.recaptchaV3Service.execute('importantAction').subscribe((token: string) => {
+      this.tokenVisible = true;
+      this.reCAPTCHAToken = `Token [${token}] generated`;
+  });
+
     this.submitted= true;
      e.preventDefault()
      if(this.nombre.value.length < 3){

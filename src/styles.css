@@ -42,16 +42,20 @@
     height: 100%;
     margin: 0;
     padding: 0;
+  
   }
 
   html {
     scroll-behavior: smooth;
+    --bs-gutter-x: 0rem!important;
+  
   }
 
   body{
     font-family: 'Roboto', sans-serif!important;
     background-color: var(--secondary-color)!important;
-
+    overflow-x: hidden;
+    --bs-gutter-x: 0rem!important;
   }
 
 

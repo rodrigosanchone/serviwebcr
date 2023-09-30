@@ -41,6 +41,10 @@ ul {
   padding-left: 25rem;
 }
 
+.bgDarkGray-1 h2 {
+  margin-left: 150px;
+}
+
 .bgDarkGray-2 {
   border-radius: 0 0 0rem 10rem;
  
@@ -48,6 +52,7 @@ ul {
 
 .side-1, .side-2{
   display: none;
+  overflow-x: hidden;
 }
 
 .rigth {
@@ -76,6 +81,11 @@ ul {
 }
 
 @media (max-width: 1200px) {
+  
+  .bgDarkGray-1 h2 {
+    margin-left: -50px!important;
+  }
+
   .bgDarkGray-1 {
     border-radius: 0 0 10rem 0;
     padding-left: 20rem;
@@ -118,8 +128,11 @@ ul {
 
 @media (max-width: 992px) {
 
-   .side-1{
+ 
+
+  .side-1{
     padding-left: 2.2rem; 
+    
   } 
 
   .side-1 h2{
@@ -141,6 +154,7 @@ ul {
 
   .bgDarkGray-1,  .bgDarkGray-2 {
     display: none;
+   
   }
   
   .side-1, .side-2{

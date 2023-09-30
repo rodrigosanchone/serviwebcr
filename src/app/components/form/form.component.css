@@ -1,80 +1,110 @@
-#form{
-    width: 100%;
-    padding: 0 1.5rem;
-}
-.social{
-    border-radius: 10rem 0 0 0;
-}
-
-
-
-
-.icon-social{
-   margin-top: 5rem!important;
-   margin-right: 100px;
-}
-
-
-
-.icon-tabler-brand-facebook{
-    margin-left: 60px;
-    width: 100%!important;
+  .contact{
+    overflow-x: hidden!important;
   
-}
+  }
 
-.icon-tabler-brand-instagram{
-    margin-left: 50px;
-}
-
-.icon-tabler-brand-linkedin{
-    margin-left: 40px;
-}
-
-.icon-tabler-brand-whatsapp{
-    margin-left: 11px;
-}
-
-
-
-@media(max-width:768px){
-
+  .row{
+    --bs-gutter-x: 0rem!important
+  }
+     
     form{
-        width: 100%;
-        margin-left: 5px;
+        width: 80%;
+         margin: 0 auto;
+        padding-top: 100px;
+        overflow-x: hidden;   
     }
 
-    
-    #form{
-        width: 100%;
-        padding: 0;
-    }
-}
-
-@media(max-width:820px){
-    form{
-        width: 100%;
-       
-    }
-    .social{
-        display: none;
+    form input{
+        font-size: 2rem;
+        overflow-x: hidden;   
     }
 
-   
-    
+    form textarea{
+        height: 600px;
+        overflow-x: hidden;   
+    }
 
-    form{
-        width: 100%;
+    .bgDarkGray{
+        overflow-x: hidden;
+        border-radius: 10rem 0 0 0;
+        margin-top: -200px;
+        color: #fff;
+        display: flex;
+        align-items: center!important;
+        z-index: 1;
+    }
+
+    .bgDarkGray h5 {
+       margin: 1rem;
+       text-align: center;
+       overflow-x: hidden;   
+    }
+
+    .bgDarkGray img{
+        height: 50px;
+        margin-left: 150px;
+        overflow-x: hidden;   
+    }
+
+
+    .msmRobot{
+        background-color: var(--gray-dark);
+        color: #fff;
+    }
+     
+
+
+    @media(max-width:1200px){ 
+
       
-    }
+    
 
-    .icon-social{
-        margin-top: 5rem!important;
-        margin-right: 100px;
-     }
-     
+    } 
+    
      
      
     
-     
+    @media(max-width:992px){ 
 
-}
+      
+
+        .bgDarkGray{
+            margin-top: 0;
+            padding-top: 100px!important;
+           text-align: center;
+           overflow-x: hidden;
+        }
+
+        .bgDarkGray h5 {
+            margin: 2rem ;
+        }
+    
+        .bgDarkGray img{
+            height: 20px;
+            margin-left: 1rem;
+        }
+    
+    } 
+    
+     
+     
+    
+    @media(max-width:768px){ 
+    
+    } 
+    
+     
+     
+    
+    @media(max-width:575px){ 
+    
+          .bgDarkGray h5 {
+            margin: 2rem 0;
+        }
+    
+        .bgDarkGray img{
+            height: 20px;
+            margin: 2rem 0;
+        }
+    
+    } 

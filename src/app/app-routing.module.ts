@@ -5,8 +5,8 @@ import { HeaderComponent } from './components/header/header.component';
 
 const routes: Routes = [
   
-  {path:``,component:HeaderComponent},
-  {path:`inicio`,component:HeaderComponent},
+  {path:``,component:FirtsComponent},
+  {path:`inicio`,component:FirtsComponent},
  
 ];
 

@@ -8,7 +8,8 @@ import * as Aos from 'aos';
   styleUrls: ['./proyects.component.css']
 })
 export class ProyectsComponent {
-   proyectos!:Proyecto[];
+   proyectos!: Proyecto[];
+  
    constructor(private proyectsServices:ProyectsService){}
    ngOnInit(){
     Aos.init();

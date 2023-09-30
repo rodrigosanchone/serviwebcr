@@ -9,37 +9,34 @@
    
  </div>
 
-  <div class="pc">
+   <div class="pc">
     <swiper-container
       class="mySwiper"
       centered-slides="true"
-      slides-per-view="4"
-      space-between="30"
+      slides-per-view="2"
+      space-between="40"
       grab-cursor="true"
     >
       <swiper-slide *ngFor="let articulo of articulos">
         <div class="card">
-          <img [src]="articulo.img" alt="" />
-          <h5>{{ articulo.titulo }}</h5>
+          <img [src]="articulo.img" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{articulo.titulo}}</h5>
+
+          </div>
         </div>
       </swiper-slide>
     </swiper-container>
-  </div>
+  </div> 
 
-  <div class="cel">
-    <swiper-container
-    class="mySwiper"
-    centered-slides="true"
-    slides-per-view="1"
-    space-between="10"
-    grab-cursor="true"
-  >
-    <swiper-slide *ngFor="let articulo of articulos">
-      <div class="card">
-        <img [src]="articulo.img" alt="" />
-        <h5>{{ articulo.titulo }}</h5>
-      </div>
-    </swiper-slide>
-  </swiper-container>
-  </div>
+
 </section>
+
+<div class="background">
+ 
+</div>
+
+<div class="opacity row">
+   <h2>Ingresa a nuetro blog</h2>
+  <button class="btn  bgGreen">Ver más</button> 
+</div>

@@ -1,4 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
+import {provideImgixLoader} from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +28,7 @@ import { FirtsComponent } from './components/firts/firts.component';
 import { Banner3Component } from './components/banner3/banner3.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { register } from 'swiper/element/bundle';
+import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha'
 
 register();
 
@@ -57,9 +60,15 @@ register();
     AngularFirestoreModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    NgOptimizedImage,
+    RecaptchaV3Module,
   
   ],
-  providers: [provideClientHydration(),ProductsService],
+  providers: [provideClientHydration(),ProductsService,
+  {
+    provide: RECAPTCHA_V3_SITE_KEY,
+    useValue: '6LeWUGQoAAAAANl6Ki7rQ-HOTE1HT3XvTeBNFLJb',
+  }],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
