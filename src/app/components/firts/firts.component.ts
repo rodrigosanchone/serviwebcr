@@ -11,9 +11,7 @@ export class FirtsComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.router.navigate(['/principal']);
-    }, 2000);
+    
   }
 
 }

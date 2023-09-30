@@ -28,7 +28,8 @@ import { FirtsComponent } from './components/firts/firts.component';
 import { Banner3Component } from './components/banner3/banner3.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { register } from 'swiper/element/bundle';
-import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha'
+import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component'
 
 register();
 
@@ -49,6 +50,7 @@ register();
     FirtsComponent,
     Banner3Component,
     PrincipalComponent,
+    PageNotFoundComponent,
  
    
   ],
