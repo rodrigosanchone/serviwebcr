@@ -1,9 +1,0 @@
-.card-img-top{
-  height: 900px;
-}
-
-@media(max-width:768px){
-    .card-img-top{
-        height: 400px;
-      }
-}

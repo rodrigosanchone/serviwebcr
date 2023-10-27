@@ -1,42 +1,44 @@
-<section class="container-fluid">
-  <div class="row blog-title bgDarkGray">
-    <div class="col-md-10">
-     <h2 class="text-center" data-aos="fade-left">Últimos Artículos</h2>
-    </div>
-    <div class="col-md-2">
-     <img src="https://dm.markhendriksen.com/wp-content/uploads/2020/03/diagonal-triangles-25.png" alt="">
-    </div>
-   
- </div>
 
-   <div class="pc">
-    <swiper-container
-      class="mySwiper"
-      centered-slides="true"
-      slides-per-view="2"
-      space-between="40"
-      grab-cursor="true"
-    >
-      <swiper-slide *ngFor="let articulo of articulos">
-        <div class="card">
-          <img [src]="articulo.img" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">{{articulo.titulo}}</h5>
+  <section >
+    <div class="row blog-title bgDarkGray">
+      <div class="col-md-10">
+       <h2 class="text-center" data-aos="fade-left">Últimos Artículos</h2>
+      </div>
+      <div class="col-md-2">
+       <img src="https://dm.markhendriksen.com/wp-content/uploads/2020/03/diagonal-triangles-25.png" alt="">
+      </div>
 
+   </div>
+
+     <div class="pc">
+      <swiper-container
+        class="mySwiper"
+        centered-slides="true"
+        slides-per-view="2"
+        space-between="40"
+        grab-cursor="true"
+      >
+        <swiper-slide *ngFor="let articulo of articulos">
+          <div class="card">
+            <img [src]="articulo.img" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{articulo.titulo}}</h5>
+
+            </div>
           </div>
-        </div>
-      </swiper-slide>
-    </swiper-container>
-  </div> 
+        </swiper-slide>
+      </swiper-container>
+    </div>
 
 
-</section>
+  </section>
 
-<div class="background">
- 
-</div>
+  <div class="background">
 
-<div class="opacity row">
-   <h2>Ingresa a nuetro blog</h2>
-  <button class="btn  bgGreen">Ver más</button> 
-</div>
+  </div>
+
+  <div class="opacity row">
+     <h2>Ingresa a nuetro blog</h2>
+    <button class="btn  bgGreen">Ver más</button>
+  </div>
+

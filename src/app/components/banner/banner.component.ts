@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import * as Aos from 'aos';
 @Component({
   selector: 'app-banner',

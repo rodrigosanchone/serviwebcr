@@ -1,38 +1,38 @@
-  .contact{
-    overflow-x: hidden!important;
-  
+
+  div.uno{
+    background-color: red;
   }
 
-  .row{
-    --bs-gutter-x: 0rem!important
+  div.dos{
+    background-color: blue;
   }
      
     form{
         width: 80%;
-         margin: 0 auto;
+        margin: 0 auto;
         padding-top: 100px;
-        overflow-x: hidden;   
+      /*   overflow-x: hidden;    */
     }
 
     form input{
         font-size: 2rem;
-        overflow-x: hidden;   
+       
     }
 
     form textarea{
         height: 600px;
-        overflow-x: hidden;   
+      
     }
 
-    .bgDarkGray{
-        overflow-x: hidden;
+  .bgDarkGray{
+       
         border-radius: 10rem 0 0 0;
         margin-top: -200px;
         color: #fff;
         display: flex;
         align-items: center!important;
-        z-index: 1;
-    }
+       
+    } 
 
     .bgDarkGray h5 {
        margin: 1rem;
@@ -42,7 +42,7 @@
 
     .bgDarkGray img{
         height: 50px;
-        margin-left: 150px;
+        margin-left: 100px;
         overflow-x: hidden;   
     }
 
@@ -55,9 +55,8 @@
 
 
     @media(max-width:1200px){ 
-
       
-    
+        
 
     } 
     
@@ -66,13 +65,17 @@
     
     @media(max-width:992px){ 
 
-      
+        .contact{
+              overflow-x: hidden!important; 
+          
+          }
 
         .bgDarkGray{
+            border-radius:0;
             margin-top: 0;
             padding-top: 100px!important;
-           text-align: center;
-           overflow-x: hidden;
+            text-align: center;
+          
         }
 
         .bgDarkGray h5 {

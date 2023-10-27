@@ -1,67 +1,204 @@
 <div id="products" class="">
-  <h2 class="text-center">Elige los mejor para usted</h2>
+  <h2 class="text-center">Elige lo mejor para usted</h2>
   <!--   <div class="card-group container" >
       <div class="card" *ngFor="let servicio of servicios, let i=index"  data-aos="zoom-in">
-      
+
         <img  [src]="servicio.img" class="card-img-top" alt="..." >
-       
+
         <div class="card-body">
           <h5 class="card-title text-center">{{servicio.nombre}}</h5>
-        
+
               <ul class="list-group">
                   <li class="list-group-item" *ngFor="let dato of servicio.datos let i=index">{{dato}}</li>
               </ul>
-          
+
         </div>
       </div>
-     
+
     </div> -->
-  <div class="row container-fluid  ">
-    <div class="card col-sm-12 col-md-12 " >
+  <div class="row container-fluid">
+    <div class="card col-sm-12 col-md-12">
       <img
         src="../../../assets/img/icon-1.png"
         class="card-img-top"
         alt="..."
       />
-      <h2 class="card-title">SEO</h2>
+      <h2 class="card-title">Diseño Web</h2>
       <div class="card-body">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
-          nisi vel dolor mattis auctor a sit amet ligula.
+          Nuestro equipo de diseñadores web creará un sitio web que sea
+          atractivo, fácil de usar y que cumpla con sus objetivos comerciales.
+          Trabajamos con usted para comprender su marca y sus necesidades, y
+          luego creamos un diseño que sea único y memorable
         </p>
+
+      </div>
+      <button
+        type="button"
+        class="btn"
+        data-bs-toggle="modal"
+        data-bs-target="#modal1"
+      >
+        Ver Más
+      </button>
+
+    </div>
+    <div
+      class="modal fade"
+      id="modal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Diseño Web</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Ofrecemos una amplia gama de servicios de diseño web, incluyendo:
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> Diseño de sitios web personalizados</li>
+              <li class="list-group-item">Diseño de logotipos y branding</li>
+              <li class="list-group-item">  Diseño de imágenes y contenido para sitios web, nuestros diseños web</li>
+              <li class="list-group-item"> Optimización para dispositivos móviles para que sus clientes puedan acceder a su sitio web desde cualquier lugar</li>
+            </ul>
+
+
+
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card col-sm-12 col-md-12  "   >
+    <div class="card col-sm-12 col-md-12">
       <img
         src="../../../assets/img/icon-2.png"
         class="card-img-top"
         alt="..."
       />
-      <h2 class="card-title">WEBSITE DESING</h2>
+      <h2 class="card-title">Desarrollo Web</h2>
       <div class="card-body">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
-          nisi vel dolor mattis auctor a sit amet ligula.
+          Nuestro equipo de desarrolladores web creará un sitio web funcional y
+          escalable que satisfaga sus necesidades comerciales. Trabajamos con
+          usted para desarrollar un sitio web que sea fácil de mantener y
+          actualizar.
         </p>
+
+      </div>
+      <button
+      type="button"
+      class="btn"
+      data-bs-toggle="modal"
+      data-bs-target="#modal2"
+    >
+      Ver Más
+    </button>
+     <div>
+
+     </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Desarrollo Web
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Ofrecemos una amplia gama de servicios de desarrollo web,
+            incluyendo:
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Desarrollo de sitios web personalizados</li>
+              <li class="list-group-item">  Desarrollo de aplicaciones web</li>
+              <li class="list-group-item">  Desarrollo de integraciones con sistemas externos</li>
+              <li class="list-group-item"> Nuestros sitios web están construidos con las últimas tecnologías
+                para que sean seguros y confiables</li>
+            </ul>
+
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card col-sm-12 col-md-12  "  >
+
+    <div class="card col-sm-12 col-md-12">
       <img
         src="../../../assets/img/icon-3.png"
         class="card-img-top"
         alt="..."
       />
-      <h2 class="card-title">CONTENT MARKETING</h2>
+      <h2 class="card-title">Soporte avanzado</h2>
       <div class="card-body">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
-          nisi vel dolor mattis auctor a sit amet ligula.
+          Nuestro equipo de soporte técnico está disponible 24/7 para ayudar a
+          solucionar cualquier problema que pueda tener con su sitio web o
+          aplicación web. Trabajamos para resolver sus problemas de forma rápida
+          y eficiente
         </p>
+      </div>
+      <button
+        type="button"
+        class="btn"
+        data-bs-toggle="modal"
+        data-bs-target="#modal3"
+      >
+        Ver Más
+      </button>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modal3"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modal3">Modal title</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+
+          Ofrecemos una amplia gama de servicios de soporte técnico, incluyendo:
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nuestros sitios web están construidos con las últimas tecnologías
+              para que sean seguros y confiables</li>
+              <li class="list-group-item">Soporte remoto  por teléfono, por correo electrónico</li>
+              <li class="list-group-item">Nuestro soporte técnico está comprometido a brindarle la ayuda que
+                necesita para que su sitio web o aplicación web funcione sin problemas</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row container-fluid mt-2  ">
-    <div class="card col-sm-12 col-md-12  " >
+  <!--  <div class="row container-fluid mt-2">
+    <div class="card col-sm-12 col-md-12">
       <img
         src="../../../assets/img/icon-4.png"
         class="card-img-top"
@@ -76,7 +213,7 @@
         </p>
       </div>
     </div>
-    <div class="card col-sm-12 col-md-12 "   >
+    <div class="card col-sm-12 col-md-12">
       <img
         src="../../../assets/img/icon-5.png"
         class="card-img-top"
@@ -90,7 +227,7 @@
         </p>
       </div>
     </div>
-    <div class="card col-sm-12 col-md-12  "  >
+    <div class="card col-sm-12 col-md-12">
       <img
         src="../../../assets/img/icon-6.png"
         class="card-img-top"
@@ -104,5 +241,5 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>

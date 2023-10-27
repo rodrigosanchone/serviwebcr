@@ -28,9 +28,12 @@ export class Banner2Component {
     
  
      window.addEventListener("scroll", () => {
+    
        if (window.scrollY > 2100) {
         bgDarkGray1.classList.add('left');
         bgDarkGray2.classList.add('rigth');
+
+        
         
        }else{
         bgDarkGray1.classList.remove('left');

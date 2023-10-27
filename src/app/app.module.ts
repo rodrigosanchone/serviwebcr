@@ -23,13 +23,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { ReactiveFormsModule } from '@angular/forms';
 import { BannerBlogComponent } from './components/banner-blog/banner-blog.component';
 import { Banner2Component } from './components/banner2/banner2.component';
-import { ValuesComponent } from './components/values/values.component';
 import { FirtsComponent } from './components/firts/firts.component';
 import { Banner3Component } from './components/banner3/banner3.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { register } from 'swiper/element/bundle';
 import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component'
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { BlogComponent } from './components/blog/blog.component'
 
 register();
 
@@ -46,13 +46,14 @@ register();
     ProyectsComponent,
     BannerBlogComponent,
     Banner2Component,
-    ValuesComponent,
+
     FirtsComponent,
     Banner3Component,
     PrincipalComponent,
     PageNotFoundComponent,
- 
-   
+    BlogComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -64,7 +65,7 @@ register();
     BrowserAnimationsModule,
     NgOptimizedImage,
     RecaptchaV3Module,
-  
+
   ],
   providers: [provideClientHydration(),ProductsService,
   {

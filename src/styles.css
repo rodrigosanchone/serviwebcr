@@ -55,7 +55,8 @@
     font-family: 'Roboto', sans-serif!important;
     background-color: var(--secondary-color)!important;
     overflow-x: hidden;
-    --bs-gutter-x: 0rem!important;
+    --bs-gutter-x: 1rem!important;
+   
   }
 
 
