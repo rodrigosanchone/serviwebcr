@@ -14,8 +14,8 @@
 }
 
 .bgDarkGray svg{
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
 }
 
 .bgDarkGray ul {
@@ -37,7 +37,7 @@ ul {
 
 .bgDarkGray-1 {
   border-radius: 0 0 10rem 0;
-  padding-left: 25rem;
+  padding-left: 20rem;
 }
 
 .bgDarkGray-1 h2 {
@@ -47,7 +47,7 @@ ul {
 
 .bgDarkGray-2 {
   border-radius: 0 0 0rem 10rem;
-
+  padding-right: 23rem;
 }
 
 .side-1, .side-2{
@@ -208,7 +208,7 @@ ul {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-450px);
+    transform: translateX(-350px);
   }
 }
 
@@ -217,7 +217,7 @@ ul {
     transform: translateX(0);
   }
   to {
-    transform: translateX(450px);
+    transform: translateX(350px);
   }
 }
 

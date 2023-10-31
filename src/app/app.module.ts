@@ -29,7 +29,8 @@ import { PrincipalComponent } from './components/principal/principal.component';
 import { register } from 'swiper/element/bundle';
 import {RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module} from 'ng-recaptcha';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { BlogComponent } from './components/blog/blog.component'
+import { BlogComponent } from './components/blog/blog.component';
+import { SitemapComponent } from './components/sitemap/sitemap.component'
 
 register();
 
@@ -52,6 +53,7 @@ register();
     PrincipalComponent,
     PageNotFoundComponent,
     BlogComponent,
+    SitemapComponent,
 
 
   ],
