@@ -6,11 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "dev:ssr": "ng run serviwebcr:serve-ssr",
-    "serve:ssr": "node dist/serviwebcr/server/main.js",
-    "build:ssr": "ng build && ng run serviwebcr:server",
-    "prerender": "ng run serviwebcr:prerender"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {

@@ -9,6 +9,9 @@ import { Router,ActivatedRoute } from '@angular/router';
 export class HeaderComponent {
 
    cerrar() {
+    if (typeof document !== 'undefined') {
+      let navbar = document.querySelector(".navbar-toggler") as HTMLButtonElement;
+    }
     let navbar = document.querySelector(".navbar-toggler") as HTMLButtonElement;
     navbar!.click();
   }
